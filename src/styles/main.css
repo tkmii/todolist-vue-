@@ -1,0 +1,60 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  min-height: 100vh;
+  color: #202020;
+}
+
+.section {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 15px 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #bfbfbf;
+}
+
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  align-self: center;
+  accent-color: #202020;
+  cursor: pointer;
+}
+
+.button__text {
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #7a8ee7;
+  color: #ffffff;
+  border: 3px solid #7a8ee7;
+  transition: background-color 0.5s ease, color 0.5s ease, border 0.5s ease;
+}
+
+.button__text[disabled] {
+  opacity: 0.5;
+}
+
+.button__text:not([disabled]):hover {
+  background-color: #ffffff;
+  color: #202020;
+  border: 3px solid #7a8ee7;
+}
+
+.button__icon {
+  width: 15px;
+  height: 15px;
+  align-self: center;
+}
+
+@media (max-width: 767px) {
+  input[type="text"] {
+    padding: 7px;
+  }
+  .button__text {
+    padding: 10px;
+  }
+}
